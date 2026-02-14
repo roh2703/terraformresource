@@ -6,11 +6,12 @@ variable "resource_group_name" {
 variable "location" {
   type        = string
   description = "Azure region."
+  default = "eastus"
 }
 
 variable "vnet_name" {
   type        = string
-  description = "VNet name."
+  description = "VNet name"
 }
 
 variable "vnet_address_space" {
