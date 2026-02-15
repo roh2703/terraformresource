@@ -1,32 +1,31 @@
 variable "resource_group_name" {
+  description = "Name of the Azure Resource Group."
   type        = string
-  description = "Resource Group name."
 }
 
 variable "location" {
+  description = "Azure region, e.g., eastus."
   type        = string
-  description = "Azure region."
-  default = "eastus"
 }
 
 variable "vnet_name" {
+  description = "Name of the Virtual Network."
   type        = string
-  description = "VNet name"
 }
 
 variable "vnet_address_space" {
+  description = "VNet CIDR ranges."
   type        = list(string)
-  description = "VNet CIDR(s)."
 }
 
 variable "dns_servers" {
+  description = "Optional custom DNS servers for the VNet."
   type        = list(string)
-  description = "Optional DNS servers."
   default     = []
 }
 
 variable "tags" {
+  description = "Tags applied to all resources."
   type        = map(string)
-  description = "Tags to apply."
   default     = {}
 }
