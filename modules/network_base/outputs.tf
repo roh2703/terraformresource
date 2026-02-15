@@ -1,15 +1,19 @@
 output "resource_group_name" {
-  value = azurerm_resource_group.rg.name
+  description = "Resource Group name."
+  value       = azurerm_resource_group.rg.name
 }
 
 output "resource_group_id" {
-  value = azurerm_resource_group.rg.id
+  description = "Resource Group ID."
+  value       = azurerm_resource_group.rg.id
 }
 
 output "vnet_name" {
-  value = azurerm_virtual_network.vnet.name
+  description = "VNet name."
+  value       = azurerm_virtual_network.vnet.name
 }
 
 output "vnet_id" {
-  value = azurerm_virtual_network.vnet.id
+  description = "VNet ID."
+  value       = azurerm_virtual_network.vnet.id
 }
